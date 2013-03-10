@@ -26,7 +26,7 @@ for pi=1:psz
             if true, fprintf('\t\t%03d/%03d. frame isleniyor...\n', fi, fsz);    end
             
             bw = imread(strcat(db_64x64_fg, db64x64_fnms{fi, si, pi}));
-            seq_frms(:,:,fi) = bw;
+            seq_frms(:,:,fi) = bw
           
             features{fi, si, pi}.project = extract_features(bw, dbg)
         end
